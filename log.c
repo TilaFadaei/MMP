@@ -5,6 +5,8 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 
 #define IP_SERVER ""
 #define PASSWORD "admin"
