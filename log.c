@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
         my_addr.sin_family = AF_INET;
         my_addr.sin_port = htons(port); 
-        my_addr.sin_addr.s_addr = IP_SERVER; 
+        my_addr.sin_addr.s_addr = inet_add(IP_SERVER); 
 
         bind(sockfd, (struct sockaddr *) &my_addr, sizeof(my_addr));
 
